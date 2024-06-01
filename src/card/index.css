@@ -1,0 +1,39 @@
+.maincard{
+    display: flex;
+    margin: 20px;
+    height: 220;
+    width: 550px;
+    background-color: rgb(117, 152, 158);
+    border-radius: 20px;
+}
+.imagecard{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+.maintext{
+    font-size: 20px;
+}
+.maintext2{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.delect{
+    margin-top: 70px;
+    background-color: transparent;
+    border-width: 0px;
+}
+.maincarditem{
+    display: grid;
+    grid-template-columns: 700px 800px;
+    justify-content: center;
+}
+.mainback{
+    display: flex;
+    justify-content: center;
+}
+.d{
+    font-size: 50px;
+    color: red;
+}

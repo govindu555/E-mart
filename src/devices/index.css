@@ -1,0 +1,52 @@
+.main2{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: center;
+    gap:    20px;
+}
+
+.items{
+    text-align: center;
+    color:#4db8ff;
+}
+.devitem{
+    text-align: center;
+    background-color:#e1e1ea;
+    padding-top: 20px;
+    height: 235px;
+    width: 160px;
+    border-radius: 20px;
+}
+.imageitem{
+    width: 150px;
+    height:150px;
+    border-radius: 10px;
+}
+.search{
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+}
+.user{
+    margin-top: 20px;
+    border-width: 2px;
+    margin-left: 530px;
+    margin-right: 400px;
+}
+.l{
+    margin-right:30px;
+}
+nav{
+    background-color: black;
+}
+.logo{
+    background-color:rgb(73, 65, 135);
+    border-style: solid;
+    border-radius: 40px;
+    color: aqua;
+}
+.cardlogo{
+    background-color: rgb(132, 163, 64);
+    font-size: 30px;
+    width: 100px;
+}

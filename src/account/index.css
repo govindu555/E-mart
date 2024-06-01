@@ -1,0 +1,48 @@
+.page1{
+    background-image: url("https://img.freepik.com/free-photo/tranquility-further-showcased-scenic-mountain-landscapes-generative-ai_188544-8761.jpg?w=1060&t=st=1714736343~exp=1714736943~hmac=b3e5351ed5fd188d7e4acca6a121d4f8be0b86f563b8bb975a5498cd1165b2df");
+    background-size: cover;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.mainhead{
+    text-align: center;
+    color: rgb(83,26, 144);
+    font-family:'Monotype Corsiva';
+    margin-bottom: 50px;
+    padding-top: 30px;
+}
+.main{
+    background-color: grey;
+    margin-left: 530px;
+    margin-right: 530px;
+    border-radius: 20px;
+}
+.item{
+    text-align: center;
+    margin-bottom: 20px;
+}
+input{
+    text-align: center;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    border-width: 0px;
+    margin-bottom: 20px;
+}
+select{
+    text-align: center;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    border-width: 0px;
+    margin-bottom: 20px;
+}
+button{
+    height: 40px;
+    width: 200px;
+    margin-bottom: 50px;
+    background-color: rgb(51, 123, 210);
+    border-radius: 20px;
+    color: white;
+}

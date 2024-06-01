@@ -1,0 +1,26 @@
+.imgitem{
+    height: 500px;
+    border-radius: 20px;
+}
+.itemdev{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(167, 206, 210);
+    margin-top: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+.pro{
+    margin: 50px;
+    font-size: 25px;
+}
+.pa{
+    color: rgb(71, 75, 137);
+}
+.b{
+    margin-top: 10px;
+}
+.bt{
+    margin: 10px;
+}

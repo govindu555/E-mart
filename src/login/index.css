@@ -1,0 +1,48 @@
+.page2{
+    background-image: url("https://img.freepik.com/free-photo/aerial-drone-view-vidraru-dam-romania_1268-19331.jpg?w=1060&t=st=1714736395~exp=1714736995~hmac=101a6914aff89047dea0d64bb9ee10376bbb622e42e426e197d0b44910c76453");
+    background-size: cover;
+    height: 100vh;
+    padding-top: 100PX;
+}
+
+
+.mainhead{
+    text-align: center;
+    color: rgb(83, 26, 144);
+    font-family:'Monotype Corsiva';
+    margin-bottom: 50px;
+    padding-top: 5px;
+}
+.main{
+    background-color: grey;
+    margin-left: 530px;
+    margin-right: 530px;
+    border-radius: 20px;
+}
+.item{
+    text-align: center;
+    margin-bottom: 20px;
+}
+input{
+    text-align: center;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    border-width: 0px;
+    margin-bottom: 20px;
+}
+.button{
+    text-align: center;
+}
+button{
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    margin-bottom: 20px;
+}
+p{
+    text-align: center;
+    color: red;
+}
