@@ -38,7 +38,7 @@ const Accountpage=()=>{
             <lable>Gmail : <input type="text" placeholder="gmail"></input><BsEnvelopeAtFill /></lable>
         </div>
         <div className="item">
-            <lable>Password : <input type="password" placeholder="password" onChange={(e)=>setPassword(e.target.value)}></input><BsShieldLockFill /></lable>
+            <lable>Password : <input type="password" placeholder="password" onChange={(e)=>setPassword(e.target.value)}></input><BsShieldLockFill />cd</lable>
         </div>
         <div className="item">
             <button type="button" onClick={()=>sample()}>Submit</button>
