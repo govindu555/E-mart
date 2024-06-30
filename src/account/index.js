@@ -35,13 +35,13 @@ const Accountpage=()=>{
             </select></lable>
         </div>
         <div className="item">
-            <lable>Gmail : <input type="text" placeholder="gmail"></input><BsEnvelopeAtFill /></lable>
+            <lable>Gmail : <input type="email" placeholder="gmail"></input><BsEnvelopeAtFill /></lable>
         </div>
         <div className="item">
             <lable>Password : <input type="password" placeholder="password" onChange={(e)=>setPassword(e.target.value)}></input><BsShieldLockFill /></lable>
         </div>
         <div className="item">
-            <button type="button" onClick={()=>sample()}>Submit</button>
+            <button type="submit" onClick={()=>sample()}>Submit</button>
         </div>
     </div>
     </div>

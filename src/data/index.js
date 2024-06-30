@@ -17,7 +17,7 @@ export const datadetails=[
         price:"1,30,999",
         model:"Apple 15 pro",
         ram:"Ram : 120gb",
-        memory:"Memory : 250gb",
+        memory:"Memory : 250gb0",
         camera:"Camera : 12px",
         cpu:"ios 14"
     },
