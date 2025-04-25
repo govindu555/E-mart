@@ -8,7 +8,7 @@ import './index.css'
 
 const Loginpage=()=>{
 
-    const [password2,setPassword2]=useState("")
+    const [password2,setPassword2]=useState("000")
 
     const userpassword=useSelector(state=>{
         return state.password
