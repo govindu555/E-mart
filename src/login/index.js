@@ -30,12 +30,17 @@ const Loginpage=()=>{
     }
 
     const sample=()=>{
+        if(userpassword==""){
+            setS("Sorry, Password is wrong, Please Try again...")
+        }
+        else{
         if(userpassword==password2){
             dev('/device')
         }
         else{
             setS("Sorry, Password is wrong, Please Try again...")
         }
+    }
     }  
 
     return(
