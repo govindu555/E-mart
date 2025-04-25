@@ -2,17 +2,20 @@ import React,{useState} from "react";
 import { datadetails } from "../data";
 import { Link } from "react-router-dom";
 import './index.css'
-import { useCard } from "../context";
 import { BsCart4 } from "react-icons/bs";
+import { useSelector } from "react-redux";
 
 
 const Deviceitems=()=>{
      const [search,setSearch]=useState("");
-     const [carditem]=useCard()
+
+     const items=useSelector(state=>{
+        return state.user
+     })
 
     return(<>
     <nav>
-           <div className="search"><h1 className="logo">Sahasra</h1><input className="user" type="search" placeholder="Search Items" onChange={(e)=>setSearch(e.target.value)}></input><Link to="/card" className="l"><button className="cardlogo"><BsCart4 /> {carditem.length}</button></Link></div>
+           <div className="search"><h1 className="logo">Sahasra</h1><input className="user" type="search" placeholder="Search Items" onChange={(e)=>setSearch(e.target.value)}></input><Link to="/card" className="l"><button className="cardlogo"><BsCart4 /> {items.length}</button></Link></div>
           </nav>
           <div className="main2">
         {datadetails.filter(i=>i.name.includes(search)).map((each)=>{

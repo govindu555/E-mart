@@ -300,6 +300,3 @@ export const datadetails=[
         capacity:"Capacity : 12hrs"
     }
 ]
-
-
-export let newdata=[]

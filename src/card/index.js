@@ -1,21 +1,34 @@
-import React,{useContext} from "react"
-import { cardcontext } from "../context"
-import { useCard } from "../context";
+import React from "react"
 import { BsTrash3Fill } from "react-icons/bs";
 import './index.css'
+import { useSelector,useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { removeitems } from "../redux";
 
 const Cardpages=()=>{
-  const [carditem,removecard,setCarditem]=useCard();
+
+  const items=useSelector(state=>{
+    return state.user
+  })
+
+  const dispath=useDispatch()
+
+  const log=useNavigate()
 
   function sample(item){
-    removecard(item)
+    dispath(removeitems(item))
+  }
+
+  function back(){
+    log('/device')
   }
 
 
   return(
+    <>
     <div className="maincarditem">
     {
-      carditem.map((item)=>{
+      items.map((item)=>{
         return(
           <div className="maincard">
             <div>
@@ -26,13 +39,17 @@ const Cardpages=()=>{
             <h1 className="maintext">{item.price}</h1>
           </div>
           <div>
-          <button className="delect" type="button" onClick={()=>sample(item)}><BsTrash3Fill className="d"/></button>
+          <button className="delect" type="button" onClick={()=>sample(item.id)}><BsTrash3Fill className="d"/></button>
           </div>
         </div>
         )
       })
     }
     </div>
+    <div className="back">
+          <button className="button2" type="button" onClick={back}>Back</button>
+        </div>
+    </>
   )
 }
 export default Cardpages

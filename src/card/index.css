@@ -3,8 +3,9 @@
     margin: 20px;
     height: 220;
     width: 550px;
-    background-color: rgb(117, 152, 158);
+    background-color: rgb(209, 215, 216);
     border-radius: 20px;
+    box-shadow: 5px 5px 5px lightblue;
 }
 .imagecard{
     height: 200px;
@@ -36,4 +37,13 @@
 .d{
     font-size: 50px;
     color: red;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px red;
+}
+.back{
+    display: flex;
+    justify-content: center;
+}
+.button2{
+    box-shadow: 5px 5px 5px lightblue;
 }

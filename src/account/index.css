@@ -7,16 +7,18 @@
 
 .mainhead{
     text-align: center;
-    color: rgb(83,26, 144);
+    color: blueviolet;
     font-family:'Monotype Corsiva';
     margin-bottom: 50px;
     padding-top: 30px;
+    text-shadow: 5px 5px 5px blue;
 }
 .main{
-    background-color: grey;
+    background-color:rgb(222, 219, 219);
     margin-left: 530px;
     margin-right: 530px;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px lightblue;
 }
 .item{
     text-align: center;
@@ -45,4 +47,18 @@ button{
     background-color: rgb(51, 123, 210);
     border-radius: 20px;
     color: white;
+}
+.check{
+    width: 20px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+.submit{
+    color: white;
+    background-color: blue;
+    width: 120px;
+    height: 40px;
+    box-shadow: 5px 5px 5px lightblue;
 }

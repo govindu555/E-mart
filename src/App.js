@@ -4,14 +4,13 @@ import Accountpage from "./account/index"
 import Deviceitems from "./devices/index"
 import Sigelitem from "./items"
 import Cardpages from "./card"
-import { Userproduct } from "./context"
 
 const App=()=>{
  return( <div>
     <BrowserRouter>
     <Routes>
-    <Route path="/" Component={Accountpage}/>
-      <Route path="/log/:password" Component={Loginpage}/>
+    <Route path="/" Component={Loginpage}/>
+    <Route path="/account" Component={Accountpage}/>
       <Route path="/device" Component={Deviceitems}/>
       <Route path="/item/:id" Component={Sigelitem}/>
       <Route path="/card" Component={Cardpages}/>

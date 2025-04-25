@@ -8,16 +8,18 @@
 
 .mainhead{
     text-align: center;
-    color: rgb(83, 26, 144);
+    color:lightgray;
     font-family:'Monotype Corsiva';
     margin-bottom: 50px;
     padding-top: 5px;
+    text-shadow: 5px 5px 5px blue;
 }
 .main{
-    background-color: grey;
+    background-color: rgb(232, 230, 230);
     margin-left: 530px;
     margin-right: 530px;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px lightblue;
 }
 .item{
     text-align: center;
@@ -45,4 +47,20 @@ button{
 p{
     text-align: center;
     color: red;
+}
+
+.wrong{
+    display: flex;
+    justify-content: center;
+}
+
+.wrong2{
+    text-shadow: 3px 3px 3px blue;
+}
+
+.submit{
+    color: white;
+    background-color: blue;
+    width: 120px;
+    height: 40px;
 }

@@ -1,8 +1,8 @@
 import React,{useState} from 'react';
-import {  useNavigate,useParams } from 'react-router-dom';
+import {  useNavigate,NavLink } from 'react-router-dom';
 import { BsShieldLockFill } from "react-icons/bs";
 import { BsEnvelopeAtFill } from "react-icons/bs";
-
+import { useSelector } from 'react-redux';
 import './index.css'
 
 
@@ -10,21 +10,13 @@ const Loginpage=()=>{
 
     const [password2,setPassword2]=useState("")
 
-    const pa=useParams()
-    const password=pa.password
+    const userpassword=useSelector(state=>{
+        return state.password
+    })
 
     const [s,setS]=useState("");
 
     const dev=useNavigate();
-     
-    const sample=()=>{
-        if(password===password2){
-            dev('/device')
-        }
-        else{
-            setS("Sorry,Password wasn't correct")
-        }
-    }  
 
     function sample2(e){
         setS("")
@@ -32,20 +24,36 @@ const Loginpage=()=>{
 
     }
 
+    function first(e){
+        e.preventDefault();
+        sample()
+    }
+
+    const sample=()=>{
+        if(userpassword==password2){
+            dev('/device')
+        }
+        else{
+            setS("Sorry, Password is wrong, Please Try again...")
+        }
+    }  
+
     return(
         
         <div className="page2">
-        <div className="main">
-             <h1 className="mainhead">Login Up</h1>
+        <form className="main" onSubmit={first}>
+             <h1 className="mainhead">Login</h1>
              <div className="item">
                 <lable>Gmail : <input type="text" placeholder="gmail"></input><BsEnvelopeAtFill /></lable>
              </div>
              <div className="item">
                 <lable>Password : <input type="password" placeholder="password" onChange={(e)=>sample2(e)}></input><BsShieldLockFill /></lable>
+             </div><div className='wrong'>
+             <NavLink className="wrong2" to="/account">Sign Up, If has no Account...</NavLink>
              </div>
              <p>{s}</p>
-             <div className="button" onClick={sample}><button type="button">Login</button></div>
-        </div>
+             <div className="button"><input className='submit' type="submit"/></div>
+        </form>
         </div>
     )}
 export default Loginpage;

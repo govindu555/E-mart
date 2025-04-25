@@ -1,20 +1,26 @@
-import React,{useContext} from "react";
+import React from "react";
 import { useParams,useNavigate } from "react-router-dom";
 import { datadetails } from "../data";
 import './index.css'
-import { useCard } from "../context";
+import { useDispatch } from "react-redux";
+import { additems } from "../redux/index";
 
 const Sigelitem=()=>{
-   const [carditem,addcard,setCarditem]=useCard();
 
     const userId=useParams();
     let id=userId.id
     const result=datadetails.find(i=>i.id==id)
     const nav=useNavigate();
 
+    const dispath=useDispatch()
 
    function sample(){
          nav('/device')
+   }
+
+   function sample2(){
+    dispath(additems(result))
+    nav('/card')
    }
 
     return(
@@ -23,7 +29,7 @@ const Sigelitem=()=>{
           <img  className="imgitem" src={result.image} alt="photo"/>
           <div className="b">
             <button className="bt" onClick={()=>sample()}>Back</button>
-            <button className="bt" onClick={()=>setCarditem([...carditem,result])} >Add Card</button>
+            <button className="bt" onClick={()=>sample2()} >Add Card</button>
           </div>
           </div>
           <div className="pro">

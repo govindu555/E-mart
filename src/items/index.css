@@ -5,11 +5,12 @@
 .itemdev{
     display: flex;
     justify-content: center;
-    background-color: rgb(167, 206, 210);
+    background-color: rgb(238, 240, 240);
     margin-top: 100px;
     margin-right: 100px;
     margin-left: 100px;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px lightblue;
 }
 .pro{
     margin: 50px;
@@ -23,4 +24,5 @@
 }
 .bt{
     margin: 10px;
+    box-shadow: 5px 5px 5px lightblue;
 }
