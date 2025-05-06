@@ -8,7 +8,7 @@ import './index.css'
 
 const Loginpage=()=>{
 
-    const [password2,setPassword2]=useState("000")
+    const [password2,setPassword2]=useState("")
 
     const userpassword=useSelector(state=>{
         return state.password
@@ -30,17 +30,12 @@ const Loginpage=()=>{
     }
 
     const sample=()=>{
-        if(userpassword==""){
-            setS("Sorry, Password is wrong, Please Try again...")
-        }
-        else{
         if(userpassword==password2){
             dev('/device')
         }
         else{
             setS("Sorry, Password is wrong, Please Try again...")
         }
-    }
     }  
 
     return(
@@ -49,10 +44,10 @@ const Loginpage=()=>{
         <form className='main' onSubmit={first}>
              <h1 className="mainhead">Login</h1>
              <div className="item">
-                <fieldset><legend>  Email <BsEnvelopeAtFill /> </legend><input className='input' type="email"></input></fieldset>
+                <fieldset><legend>  Email <BsEnvelopeAtFill /> </legend><input className='input' type="email" required></input></fieldset>
              </div>
              <div className="item">
-                <fieldset> <legend>  Password <BsShieldLockFill /> </legend><input className='input' type="password" onChange={(e)=>sample2(e)}></input></fieldset>
+                <fieldset> <legend>  Password <BsShieldLockFill /> </legend><input className='input' type="password" required onChange={(e)=>sample2(e)}></input></fieldset>
              </div><div className='wrong'>
              <NavLink className="wrong2" to="/account">Sign Up, If has no Account...</NavLink>
              </div>
