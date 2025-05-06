@@ -32,10 +32,13 @@
 }
 .user{
     margin-top: 20px;
+    width: 150px;
+    height: 40px;
     border-width: 2px;
     margin-left: 530px;
     margin-right: 400px;
     box-shadow: 5px 5px 5px lightblue;
+    border-radius: 20px;
 }
 .l{
     margin-right:30px;

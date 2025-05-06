@@ -24,10 +24,10 @@ const Accountpage=()=>{
     <form className="main" onSubmit={first}>
         <h1 className="mainhead">Sign Up</h1>
         <div className="item">
-            <lable>Name : <input type="text" placeholder="name" required></input><BsPersonLinesFill /></lable>
+            <fieldset><legend>Name <BsPersonLinesFill /></legend><input className='input' type="text" required></input></fieldset>
         </div>
         <div className="item">
-           <lable>City :  <select>
+           <fieldset><legend>City *</legend><select>
                 <option>Other</option>
                 <option>Samalkota</option>
                 <option>Kakinada</option>
@@ -35,17 +35,17 @@ const Accountpage=()=>{
                 <option>Vijayawada</option>
                 <option>Visakapatnam</option>
                 <option>Hyderabad</option>
-            </select></lable>
+            </select></fieldset>
         </div>
         <div className="item">
-            <lable>Gmail : <input type="email" placeholder="gmail" required/><BsEnvelopeAtFill /></lable>
+            <fieldset><legend>Email <BsEnvelopeAtFill /></legend><input className='input' type="email" required/></fieldset>
         </div>
         <div className="item">
-            <lable>Password : <input type="password" placeholder="password" onChange={(e)=>setPassword(e.target.value)} required></input><BsShieldLockFill /></lable>
+            <fieldset><legend>Password <BsShieldLockFill /></legend><input className='input' type="password" onChange={(e)=>setPassword(e.target.value)} required></input></fieldset>
         </div>
         <div className='box'>
         <input className='check' id='id' type='checkbox' required/>
-        <label htmlFor='id'>Are you aree</label>
+        <label htmlFor='id' className='check2'>Are you aree</label>
         </div>
         <div className="item">
             <input className='submit' type="submit"/>

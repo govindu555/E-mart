@@ -46,13 +46,13 @@ const Loginpage=()=>{
     return(
         
         <div className="page2">
-        <form className="main" onSubmit={first}>
+        <form className='main' onSubmit={first}>
              <h1 className="mainhead">Login</h1>
              <div className="item">
-                <lable>Gmail : <input type="text" placeholder="gmail"></input><BsEnvelopeAtFill /></lable>
+                <fieldset><legend>  Email <BsEnvelopeAtFill /> </legend><input className='input' type="email"></input></fieldset>
              </div>
              <div className="item">
-                <lable>Password : <input type="password" placeholder="password" onChange={(e)=>sample2(e)}></input><BsShieldLockFill /></lable>
+                <fieldset> <legend>  Password <BsShieldLockFill /> </legend><input className='input' type="password" onChange={(e)=>sample2(e)}></input></fieldset>
              </div><div className='wrong'>
              <NavLink className="wrong2" to="/account">Sign Up, If has no Account...</NavLink>
              </div>

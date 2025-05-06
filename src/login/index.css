@@ -8,31 +8,31 @@
 
 .mainhead{
     text-align: center;
-    color:lightgray;
+    color:blue;
     font-family:'Monotype Corsiva';
     margin-bottom: 50px;
     padding-top: 5px;
     text-shadow: 5px 5px 5px blue;
 }
 .main{
-    background-color: rgb(232, 230, 230);
+    background-color:black;
     margin-left: 530px;
     margin-right: 530px;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px lightblue;
+    box-shadow: 5px 5px 5px blue;
 }
 .item{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
 }
-input{
-    text-align: center;
-    height: 30px;
-    width: 200px;
-    border-radius: 10px;
-    border-width: 0px;
-    margin-bottom: 20px;
+
+.input{
+    background-color: transparent;
+    outline: none;
+    color: white;
 }
+
 .button{
     text-align: center;
 }
@@ -63,4 +63,15 @@ p{
     background-color: blue;
     width: 120px;
     height: 40px;
+}
+fieldset{
+    width: 200px;
+    height: 30px;
+    border-width: 5px;
+    border-color: lightgreen;
+    border-radius: 20px;
+}
+legend{
+    text-align: left;
+    color: lightgreen;
 }

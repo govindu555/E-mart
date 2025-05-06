@@ -14,24 +14,22 @@
     text-shadow: 5px 5px 5px blue;
 }
 .main{
-    background-color:rgb(222, 219, 219);
+    background-color:black;
     margin-left: 530px;
     margin-right: 530px;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px lightblue;
+    box-shadow: 5px 5px 5px blue;
 }
 .item{
     text-align: center;
     margin-bottom: 20px;
 }
 input{
-    text-align: center;
-    height: 30px;
-    width: 200px;
-    border-radius: 10px;
-    border-width: 0px;
-    margin-bottom: 20px;
+  background-color: transparent;
+  border: 0px;
+  text-align: center;
 }
+
 select{
     text-align: center;
     height: 30px;
@@ -39,7 +37,15 @@ select{
     border-radius: 10px;
     border-width: 0px;
     margin-bottom: 20px;
+    background-color: transparent;
+    color: white;
+    outline: none;
 }
+
+option{
+    background-color: lightgray;
+}
+
 button{
     height: 40px;
     width: 200px;
@@ -50,6 +56,11 @@ button{
 }
 .check{
     width: 20px;
+    margin-bottom: 13px;
+    height: 30px;
+}
+.check2{
+    color: lightblue;
 }
 .box{
     display: flex;
@@ -58,7 +69,9 @@ button{
 .submit{
     color: white;
     background-color: blue;
+    border-radius: 20px;
     width: 120px;
     height: 40px;
     box-shadow: 5px 5px 5px lightblue;
+    margin-bottom: 20px;
 }
