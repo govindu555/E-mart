@@ -3,16 +3,20 @@
     grid-template-columns: 300px 300px 300px 300px;
     justify-content: center;
     gap:    20px;
+    height: 90vh;
+    overflow-y: scroll;
 }
 
 .items{
     text-align: center;
-    color:#4db8ff;
+    color:gray;
+    text-decoration: none;
 }
+
 .devitem{
-    margin-top: 120px;
+margin-top: 120px;
     text-align: center;
-    background-color:#f2f2f3;
+    background-color:#ffffff;
     padding-top: 20px;
     height: 235px;
     width: 160px;
@@ -29,11 +33,13 @@
     display: flex;
     text-align: center;
     padding-top: 20px;
+    background-color:rgb(136, 136, 247);
 }
 .user{
     margin-top: 20px;
     width: 150px;
     height: 40px;
+    background-color: white;
     border-width: 2px;
     margin-left: 530px;
     margin-right: 400px;
@@ -60,4 +66,8 @@ nav{
     font-size: 30px;
     width: 100px;
     box-shadow: 5px 5px 5px lightblue;
+}
+
+.cardlogo:hover{
+    cursor: pointer;
 }

@@ -3,7 +3,6 @@
     margin: 20px;
     height: 220;
     width: 550px;
-    background-color: rgb(209, 215, 216);
     border-radius: 20px;
     box-shadow: 5px 5px 5px lightblue;
 }
@@ -25,6 +24,11 @@
     background-color: transparent;
     border-width: 0px;
 }
+
+.delect:hover{
+    cursor: pointer;
+}
+
 .maincarditem{
     display: grid;
     grid-template-columns: 700px 800px;
@@ -46,4 +50,8 @@
 }
 .button2{
     box-shadow: 5px 5px 5px lightblue;
+}
+
+.button2:hover{
+    cursor: pointer;
 }

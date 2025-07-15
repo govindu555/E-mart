@@ -5,7 +5,6 @@
 .itemdev{
     display: flex;
     justify-content: center;
-    background-color: rgb(238, 240, 240);
     margin-top: 100px;
     margin-right: 100px;
     margin-left: 100px;
@@ -24,5 +23,8 @@
 }
 .bt{
     margin: 10px;
-    box-shadow: 5px 5px 5px lightblue;
+}
+
+.bt:hover{
+    cursor: pointer;
 }

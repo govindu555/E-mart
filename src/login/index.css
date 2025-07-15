@@ -29,6 +29,7 @@
 
 .input{
     background-color: transparent;
+    padding-bottom: 50px;
     outline: none;
     color: white;
 }
@@ -36,14 +37,15 @@
 .button{
     text-align: center;
 }
+
 button{
     height: 40px;
     width: 200px;
     border-radius: 20px;
-    background-color: rgb(0, 119, 255);
     color: white;
     margin-bottom: 20px;
 }
+
 p{
     text-align: center;
     color: red;
@@ -59,16 +61,21 @@ p{
 }
 
 .submit{
-    color: white;
-    background-color: blue;
+    color:black;
+    background-color:lightgray;
     width: 120px;
     height: 40px;
 }
+
+.submit:hover{
+    cursor: pointer;
+}
+
 fieldset{
     width: 200px;
     height: 30px;
     border-width: 5px;
-    border-color: lightgreen;
+    border-color:gray;
     border-radius: 20px;
 }
 legend{
